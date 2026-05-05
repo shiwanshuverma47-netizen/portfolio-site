@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shiwanshu Verma — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=Fira+Code:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<canvas id="canvas-bg"></canvas>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">SV</div>
+  <div class="nav-links">
+    <a href="#hero">Home</a>
+    <a href="#skills">Skills</a>
+    <a href="#curriculum">Curriculum</a>
+    <a href="#timeline">Journey</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-text">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      IIT Roorkee · New Age Software Engineering
+    </div>
+    <h1 class="hero-name glitch" data-text="Shiwanshu Verma">Shiwanshu Verma</h1>
+    <div class="hero-role">Software Engineer &amp; AI Developer</div>
+    <p class="hero-bio">
+      Passionate software & AI engineering  at IIT Roorkee's iHUB DivyaSampark program, 
+      building expertise in full-stack development, AI systems, and LLM-powered applications.
+    </p>
+    <div class="hero-cta">
+      <a href="#curriculum" class="btn btn-primary">View Curriculum →</a>
+      <a href="#contact" class="btn btn-outline">Get In Touch</a>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div style="position:relative;">
+      <div class="floating-badges">
+        <div class="f-badge"><span class="icon">🤖</span> AI &amp; LLMs</div>
+        <div class="f-badge"><span class="icon">⚡</span> FastAPI Dev</div>
+        <div class="f-badge"><span class="icon">🧠</span> RAG Systems</div>
+      </div>
+      <div class="photo-wrapper">
+        <div class="photo-card" id="photoCard">
+          <img src="shiwanshu.jpg" alt="Shiwanshu Verma" />
+          <div class="photo-overlay">
+            <span class="photo-tag">// available for opportunities</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint" style="grid-column:1/-1;">
+    <span>SCROLL</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-header">
+    <span class="section-label">// about me</span>
+    <h2 class="section-title">About Me</h2>
+  </div>
+
+  <div class="about-container">
+    <div class="about-text">
+      <p>
+        Hello! I'm <strong>Shiwanshu Verma</strong>, a passionate AI & software engineer currently 
+          enrolled in an AI & Software Engineering course from IIT Roorkee.
+      </p>
+      <p>
+        I have strong interest in Web Development, AI-ML, and building modern 3D dynamic websites.
+        I love solving problems and continuously improving my technical skills.
+      </p>
+
+       <p>
+        Currently, I’m enhancing my skills through hands-on projects and an AI & Software 
+       Engineering program from IIT Roorkee, with a focus on real-world problem solving.
+      </p>
+
+      <p>
+        I believe in consistent learning, practical implementation, and delivering impactful results.
+          Actively seeking opportunities to contribute, grow, and build meaningful tech solutions.
+      </p>
+
+      <p>
+        When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, 
+        and connecting with fellow developers and AI enthusiasts.
+      </p>
+
+
+       <p>
+       <strong>
+       Certified by IIT Roorkee 
+       <span style="color: #ff5733;">I hub DivyaSampark</span>
+       </strong>
+       </p>
+
+     </div>
+    <!-- Specialize -->
+  
+
+    <div class="about-image">
+      <img src="shiwanshu.jpg" alt="Shiwanshu Verma">
+    </div>
+  </div>
+</section>
+
+
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-header">
+    <span class="section-label">// expertise</span>
+    <h2 class="section-title">Skills &amp; Technologies</h2>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat-box"><span class="stat-num">6</span><div class="stat-label">Curriculum Modules</div></div>
+    <div class="stat-box"><span class="stat-num">50</span><div class="stat-label">Weeks Program</div></div>
+    <div class="stat-box"><span class="stat-num">500+</span><div class="stat-label">Learning Hours</div></div>
+    <div class="stat-box"><span class="stat-num">IIT Roorkee</span><div class="stat-label">iHUB DivyaSampark</div></div>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <div class="skill-icon">🐍</div>
+      <div class="skill-name">Python &amp; CS Foundations</div>
+      <div class="skill-desc">Strong fundamentals in Python, OOP, data structures, algorithms, and computer science concepts.</div>
+      <div class="skill-tags">
+        <span class="tag">Python</span><span class="tag">OOP</span><span class="tag">DSA</span><span class="tag">Algorithms</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🌐</div>
+      <div class="skill-name">Web Development</div>
+      <div class="skill-desc">Full-stack web development including HTML, CSS, JavaScript, DOM manipulation, and REST APIs.</div>
+      <div class="skill-tags">
+        <span class="tag">HTML/CSS</span><span class="tag">JavaScript</span><span class="tag">REST APIs</span><span class="tag">Git</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">⚡</div>
+      <div class="skill-name">Backend Engineering</div>
+      <div class="skill-desc">Building robust backends with FastAPI, SQL databases, SQLAlchemy ORM, and authentication systems.</div>
+      <div class="skill-tags">
+        <span class="tag">FastAPI</span><span class="tag">SQL</span><span class="tag">SQLAlchemy</span><span class="tag">Pydantic</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🤖</div>
+      <div class="skill-name">LLM &amp; AI Systems</div>
+      <div class="skill-desc">Working with large language models, prompt engineering, embeddings, and vector databases.</div>
+      <div class="skill-tags">
+        <span class="tag">OpenAI</span><span class="tag">HuggingFace</span><span class="tag">Ollama</span><span class="tag">Embeddings</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🔍</div>
+      <div class="skill-name">RAG &amp; Agentic Systems</div>
+      <div class="skill-desc">Building retrieval-augmented generation pipelines, AI agents, and multi-agent architectures with LangChain.</div>
+      <div class="skill-tags">
+        <span class="tag">RAG</span><span class="tag">LangChain</span><span class="tag">AI Agents</span><span class="tag">MCP</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🔬</div>
+      <div class="skill-name">LangGraph &amp; Fine-Tuning</div>
+      <div class="skill-desc">Stateful AI applications with LangGraph, LLM fine-tuning, and production deployment pipelines.</div>
+      <div class="skill-tags">
+        <span class="tag">LangGraph</span><span class="tag">Fine-Tuning</span><span class="tag">DevOps</span><span class="tag">Docker</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CURRICULUM -->
+<section id="curriculum">
+  <div class="section-header">
+    <span class="section-label">// education</span>
+    <h2 class="section-title">IIT Roorkee Curriculum</h2>
+  </div>
+
+  <div class="modules-grid">
+    <div class="module-card">
+      <div class="module-num">MODULE 01</div>
+      <div class="module-title">Programming &amp; CS Foundations</div>
+      <ul class="module-topics">
+        <li>Number Systems &amp; Data Representation</li>
+        <li>Python: Variables, Control Structures</li>
+        <li>Data Structures: Lists, Tuples, Dicts</li>
+        <li>OOP &amp; Advanced Abstractions</li>
+        <li>Virtual Environments &amp; Testing</li>
+      </ul>
+    </div>
+    <div class="module-card">
+      <div class="module-num">MODULE 02</div>
+      <div class="module-title">Web, DSA &amp; Dev Workflow</div>
+      <ul class="module-topics">
+        <li>Arrays, Recursion, Sorting</li>
+        <li>HTML, CSS, JavaScript DOM</li>
+        <li>Stack, Queue, Binary Search</li>
+        <li>Git &amp; Collaboration Workflows</li>
+        <li>APIs &amp; Client-Server Architecture</li>
+      </ul>
+    </div>
+    <div class="module-card">
+      <div class="module-num">MODULE 03</div>
+      <div class="module-title">Backend Engineering</div>
+      <ul class="module-topics">
+        <li>REST APIs &amp; FastAPI</li>
+        <li>Pydantic Data Validation</li>
+        <li>Authentication &amp; Authorization</li>
+        <li>SQL &amp; Database Connectivity</li>
+        <li>Migrations &amp; Production DBs</li>
+      </ul>
+    </div>
+    <div class="module-card">
+      <div class="module-num">MODULE 04</div>
+      <div class="module-title">LLM Foundations &amp; Multimodality</div>
+      <ul class="module-topics">
+        <li>Large Language Models Intro</li>
+        <li>Prompt Engineering &amp; Optimization</li>
+        <li>OpenAI &amp; HuggingFace APIs</li>
+        <li>Vector Embeddings &amp; Supabase</li>
+        <li>Multimodality &amp; Local Models</li>
+      </ul>
+    </div>
+    <div class="module-card">
+      <div class="module-num">MODULE 05</div>
+      <div class="module-title">RAG &amp; Agentic Systems</div>
+      <ul class="module-topics">
+        <li>RAG Pipeline &amp; Retrieval Strategies</li>
+        <li>AI Agents Architecture</li>
+        <li>LangChain Core Components</li>
+        <li>Multi-Agent Systems</li>
+        <li>Model Context Protocol (MCP)</li>
+      </ul>
+    </div>
+    <div class="module-card">
+      <div class="module-num">MODULE 06</div>
+      <div class="module-title">LangGraph &amp; Fine-Tuning</div>
+      <ul class="module-topics">
+        <li>LangGraph Workflows &amp; Patterns</li>
+        <li>Stateful AI Applications</li>
+        <li>LLM Fine-Tuning Fundamentals</li>
+        <li>Production Deployment</li>
+        <li>Capstone Project</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section id="timeline">
+  <div class="section-header">
+    <span class="section-label">// journey</span>
+    <h2 class="section-title">Learning Journey</h2>
+  </div>
+
+  <div class="timeline-container">
+    <div class="timeline-line"></div>
+
+    <div class="timeline-item">
+      <div class="tl-content">
+        <div class="tl-date">Sept 2025 — Foundation</div>
+        <div class="tl-title">SQL &amp; Database Foundations</div>
+        <div class="tl-desc">Began the IIT Roorkee program with SQL fundamentals and data manipulation.</div>
+      </div>
+      <div class="tl-dot"></div>
+      <div></div>
+    </div>
+
+    <div class="timeline-item">
+      <div></div>
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <div class="tl-date">Oct — Nov 2025</div>
+        <div class="tl-title">Python &amp; Web Development</div>
+        <div class="tl-desc">Mastered Python OOP, data structures, and built full web applications.</div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="tl-content">
+        <div class="tl-date">Dec 2025 — Jan 2026</div>
+        <div class="tl-title">Backend Engineering</div>
+        <div class="tl-desc">Built production-ready APIs with FastAPI, authentication, and databases.</div>
+      </div>
+      <div class="tl-dot"></div>
+      <div></div>
+    </div>
+
+    <div class="timeline-item">
+      <div></div>
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <div class="tl-date">Jan — Feb 2026</div>
+        <div class="tl-title">AI &amp; LLM Development</div>
+        <div class="tl-desc">Explored LLMs, prompt engineering, embeddings, and vector databases.</div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="tl-content">
+        <div class="tl-date">Feb — Mar 2026</div>
+        <div class="tl-title">RAG &amp; Agent Systems</div>
+        <div class="tl-desc">Built retrieval-augmented generation systems and autonomous AI agents.</div>
+      </div>
+      <div class="tl-dot"></div>
+      <div></div>
+    </div>
+
+    <div class="timeline-item">
+      <div></div>
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <div class="tl-date">Apr 2026 — Capstone</div>
+        <div class="tl-title">Capstone Project</div>
+        <div class="tl-desc">Architecting and deploying a full-scale AI application.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-header">
+    <span class="section-label">// connect</span>
+    <h2 class="section-title">Get In Touch</h2>
+  </div>
+
+  <div class="contact-card">
+    <div class="contact-title">Let's Build Together</div>
+    <p class="contact-desc">
+      I'm actively learning and open to internships, collaborations, and exciting 
+      software engineering opportunities. Currently at IIT Roorkee's New Age Software Engineering program.
+    </p>
+    <div class="social-links">
+      <a href="mailto:shiwanshuverma47@gmail.com" class="social-link">
+        <span>📧</span> Email Me
+      </a>
+      <a href="https://linkedin.com/in/shiwanshu-verma48954748" class="social-link" target="_blank">
+        <span>💼</span>  LinkedIn
+      </a>
+      <a href="https://github.com/shiwanshu-verma" class="social-link" target="_blank">
+        <span>💻</span> GitHub
+      </a>
+    </div>
+  </div>
+</section> 
+ 
+<!-- FOOTER -->
+<footer>
+  <div class="footer-text">© 2025 Shiwanshu Verma · IIT Roorkee, iHUB DivyaSampark</div>
+  <div class="footer-code">&lt;built with passion /&gt;</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
