@@ -120,7 +120,7 @@ document.querySelectorAll('.stat-num').forEach(el => {
       if (entries[0].isIntersecting) {
         requestAnimationFrame(t => step(t, t));
         obs2.disconnect();
-      }
+      } 
     });
     obs2.observe(el);
   }
