@@ -23,3 +23,5 @@ This is my personal portfolio website designed to showcase my skills, projects, 
 - Skills
 - Projects
 - Contacts
+## Planing to add a new feature 
+add all about my project and what is make during my learning jurnry 
