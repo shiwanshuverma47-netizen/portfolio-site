@@ -17,7 +17,17 @@ document.querySelectorAll('a, button, .skill-card, .module-card').forEach(el => 
   el.addEventListener('mouseleave', () => { cursor.style.transform = 'scale(1)'; });
 });
 
-
+// CHAT ASSISTANT
+const assistantButton = document.getElementById('chatAssistant');
+const assistantTip = document.getElementById('assistantTip');
+assistantButton?.addEventListener('click', () => {
+  assistantButton.classList.toggle('is-active');
+  if (assistantTip) {
+    assistantTip.textContent = assistantButton.classList.contains('is-active')
+      ? 'Hello! I can guide you through the portfolio.'
+      : 'Need help? Ask me anything.';
+  }
+});
 
 // 3D PHOTO TILT
 const card = document.getElementById('photoCard');
