@@ -10,6 +10,7 @@ This is my personal portfolio website designed to showcase my skills, projects, 
 - Projects section with details
 - Contact section
 - Social media and GitHub links
+- Floating AI assistant badge in the bottom-right corner
 
 ## 🛠 Tech Stack
 - HTML

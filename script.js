@@ -29,6 +29,12 @@ assistantButton?.addEventListener('click', () => {
   }
 });
 
+assistantButton?.addEventListener('mouseenter', () => {
+  if (assistantTip) {
+    assistantTip.textContent = 'Need help? Ask me anything.';
+  }
+});
+
 // 3D PHOTO TILT
 const card = document.getElementById('photoCard');
 const wrapper   = card?.parentElement?.parentElement;
