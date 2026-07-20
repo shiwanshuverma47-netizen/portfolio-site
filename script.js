@@ -12,7 +12,7 @@ document.addEventListener('mousemove', e => {
   ring.style.left = rx - 20 + 'px'; ring.style.top = ry - 20 + 'px';
   requestAnimationFrame(animRing);
 })();
-document.querySelectorAll('a, button, .skill-card, .module-card').forEach(el => {
+document.querySelectorAll('a, button, .skill-card, .module-card, .project-card, .quote-card').forEach(el => {
   el.addEventListener('mouseenter', () => { cursor.style.transform = 'scale(2.5)'; });
   el.addEventListener('mouseleave', () => { cursor.style.transform = 'scale(1)'; });
 });
@@ -111,7 +111,7 @@ const observer = new IntersectionObserver(entries => {
     }
   });
 }, { threshold: 0.1 });
-document.querySelectorAll('.skill-card, .module-card, .stat-box, .tl-content').forEach(el => {
+document.querySelectorAll('.skill-card, .module-card, .stat-box, .tl-content, .project-card, .quote-card').forEach(el => {
   el.style.opacity = '0';
   el.style.transform = 'translateY(30px)';
   el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
