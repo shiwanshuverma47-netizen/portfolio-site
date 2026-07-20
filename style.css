@@ -305,6 +305,21 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
   }
+  .project-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 16px;
+    justify-content: center;
+  }
+  .highlight-pill {
+    border: 1px solid rgba(108,99,255,0.2);
+    background: rgba(17,17,24,0.8);
+    color: var(--text);
+    padding: 8px 12px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+  }
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
