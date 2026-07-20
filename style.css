@@ -142,7 +142,15 @@
 
   .hero-bio {
     color: var(--muted); font-size: 1rem; line-height: 1.8;
-    max-width: 480px; margin-bottom: 40px;
+    max-width: 480px; margin-bottom: 16px;
+  }
+  .hero-affirmation {
+    color: var(--cyan);
+    font-family: 'Fira Code', monospace;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
   }
   .hero-cta { display: flex; gap: 16px; }
   .btn {
