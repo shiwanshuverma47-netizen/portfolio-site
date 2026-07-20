@@ -274,6 +274,7 @@
   #projects {
     padding: 100px 60px;
     background: linear-gradient(180deg, var(--bg) 0%, var(--surface) 100%);
+    scroll-margin-top: 90px;
   }
   .project-spotlight {
     max-width: 900px;
