@@ -13,7 +13,7 @@ This is my personal portfolio website designed to showcase my skills, projects, 
 - Floating AI assistant badge in the bottom-right corner
 
 ## 🛠 Tech Stack
-- HTML
+- HTML(Hyper text markup language )
 - CSS
 - JavaScript
 - React (if used)
