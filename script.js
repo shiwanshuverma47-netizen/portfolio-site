@@ -1,6 +1,8 @@
 // CURSOR
 const cursor = document.getElementById('cursor');
 const ring = document.getElementById('cursorRing');
+const themeToggle = document.getElementById('themeToggle');
+const scrollProgress = document.getElementById('scrollProgress');
 let mx = 0, my = 0, rx = 0, ry = 0;
 document.addEventListener('mousemove', e => {
   mx = e.clientX; my = e.clientY;
@@ -33,6 +35,29 @@ assistantButton?.addEventListener('mouseenter', () => {
   if (assistantTip) {
     assistantTip.textContent = 'Need help? Ask me anything.';
   }
+});
+
+const applyTheme = (isLight) => {
+  document.body.classList.toggle('theme-light', isLight);
+  if (themeToggle) {
+    themeToggle.querySelector('.theme-icon').textContent = isLight ? '🌙' : '☀️';
+    themeToggle.setAttribute('aria-label', isLight ? 'Switch to dark theme' : 'Switch to light theme');
+  }
+  localStorage.setItem('portfolio-theme', isLight ? 'light' : 'dark');
+};
+
+const savedTheme = localStorage.getItem('portfolio-theme');
+if (savedTheme === 'light') applyTheme(true);
+
+themeToggle?.addEventListener('click', () => {
+  applyTheme(!document.body.classList.contains('theme-light'));
+});
+
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+  if (scrollProgress) scrollProgress.style.width = `${Math.min(progress, 100)}%`;
 });
 
 // 3D PHOTO TILT
