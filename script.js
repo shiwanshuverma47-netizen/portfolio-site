@@ -166,3 +166,41 @@ document.querySelectorAll('.stat-num').forEach(el => {
     obs2.observe(el);
   }
 });
+
+// PROJECT LAB FILTERS
+const projectSearch = document.getElementById('projectSearch');
+const projectFilters = document.querySelectorAll('.lab-filter');
+const projectCards = document.querySelectorAll('.lab-card');
+const projectEmpty = document.getElementById('projectEmpty');
+let activeProjectFilter = 'all';
+
+function updateProjectLab() {
+  const searchTerm = projectSearch?.value.trim().toLowerCase() || '';
+  let visibleProjects = 0;
+
+  projectCards.forEach(card => {
+    const matchesFilter = activeProjectFilter === 'all' || card.dataset.category === activeProjectFilter;
+    const matchesSearch = !searchTerm || card.dataset.search.includes(searchTerm);
+    const isVisible = matchesFilter && matchesSearch;
+    card.classList.toggle('is-hidden', !isVisible);
+    card.setAttribute('aria-hidden', String(!isVisible));
+    if (isVisible) visibleProjects += 1;
+  });
+
+  if (projectEmpty) projectEmpty.hidden = visibleProjects > 0;
+}
+
+projectSearch?.addEventListener('input', updateProjectLab);
+projectFilters.forEach(filterButton => {
+  filterButton.addEventListener('click', () => {
+    activeProjectFilter = filterButton.dataset.filter;
+    projectFilters.forEach(button => {
+      const isActive = button === filterButton;
+      button.classList.toggle('is-active', isActive);
+      button.setAttribute('aria-pressed', String(isActive));
+    });
+    updateProjectLab();
+  });
+});
+
+updateProjectLab();
