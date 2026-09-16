@@ -484,6 +484,31 @@
     </div>
   </div>
 </section> 
+
+<!-- PROJECT LAB -->
+<section id="project-lab" aria-labelledby="project-lab-title">
+  <div class="section-header">
+    <span class="section-label">// project lab</span>
+    <h2 class="section-title" id="project-lab-title">Explore My Build Log</h2>
+    <p class="lab-intro">Filter the experiments, tools, and ideas shaping my learning journey.</p>
+  </div>
+
+  <div class="lab-toolbar" role="search">
+    <label class="lab-search">
+      <span class="sr-only">Search projects</span>
+      <input id="projectSearch" type="search" placeholder="Search projects or technologies" autocomplete="off">
+    </label>
+    <div class="lab-filters" role="group" aria-label="Filter projects by focus">
+      <button class="lab-filter is-active" type="button" data-filter="all" aria-pressed="true">All builds</button>
+      <button class="lab-filter" type="button" data-filter="ai" aria-pressed="false">AI systems</button>
+      <button class="lab-filter" type="button" data-filter="web" aria-pressed="false">Web apps</button>
+      <button class="lab-filter" type="button" data-filter="foundations" aria-pressed="false">Foundations</button>
+    </div>
+  </div>
+
+  <div class="lab-results" id="projectResults" aria-live="polite"></div>
+  <p class="lab-empty" id="projectEmpty" hidden>No builds match that search yet.</p>
+</section>
  
 <!-- FOOTER -->
 <footer>
