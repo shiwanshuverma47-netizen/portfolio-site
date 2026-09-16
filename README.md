@@ -26,3 +26,10 @@ This is my personal portfolio website designed to showcase my skills, projects, 
 - Contacts
 ## Planing to add a new feature 
 add all about my project and what is make during my learning jurnry 
+
+## Project Lab
+The Project Lab turns the learning journey into an interactive build log:
+- Search projects by name, technology, or focus
+- Filter builds by AI systems, web apps, or foundations
+- Expand each build to read the key lesson behind it
+- See the live number of matching builds while exploring
