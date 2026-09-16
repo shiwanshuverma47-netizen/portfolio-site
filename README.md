@@ -5,7 +5,7 @@ This is my personal portfolio website designed to showcase my skills, projects, 
 
 ## 🚀 Features
 - Responsive modern UI design
-- About Me section
+- About Me section with full journey
 - Skills showcase
 - Projects section with details
 - Contact section
