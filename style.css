@@ -806,6 +806,14 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 18px;
   }
+  .lab-status {
+    max-width: 1100px;
+    margin: 0 auto 14px;
+    color: var(--muted);
+    font: 0.72rem 'Fira Code', monospace;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
   .lab-card {
     background: var(--card);
     border: 1px solid var(--border);

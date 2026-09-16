@@ -172,6 +172,7 @@ const projectSearch = document.getElementById('projectSearch');
 const projectFilters = document.querySelectorAll('.lab-filter');
 const projectCards = document.querySelectorAll('.lab-card');
 const projectEmpty = document.getElementById('projectEmpty');
+const projectStatus = document.getElementById('projectStatus');
 let activeProjectFilter = 'all';
 
 function updateProjectLab() {
@@ -188,6 +189,10 @@ function updateProjectLab() {
   });
 
   if (projectEmpty) projectEmpty.hidden = visibleProjects > 0;
+  if (projectStatus) {
+    const filterLabel = activeProjectFilter === 'all' ? 'all builds' : `${activeProjectFilter} builds`;
+    projectStatus.textContent = `Showing ${visibleProjects} ${filterLabel}`;
+  }
 }
 
 projectSearch?.addEventListener('input', updateProjectLab);
