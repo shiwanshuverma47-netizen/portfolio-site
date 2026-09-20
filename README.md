@@ -14,6 +14,10 @@ This is a responsive personal portfolio for Shiwanshu Verma. It presents my skil
 - Floating AI assistant entry point
 - Contact is the final main section before the footer
 
+## Screenshots
+
+The portfolio is designed to be explored on both large and small screens. Add current desktop and mobile captures to a `screenshots/` directory and link them here when previews are available.
+
 ## Tech Stack
 
 - HTML5 for the page structure
