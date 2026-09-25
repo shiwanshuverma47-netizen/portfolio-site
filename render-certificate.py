@@ -10,7 +10,7 @@ if not source.exists():
     raise FileNotFoundError(f"Certificate PDF not found: {source}")
 
 output.parent.mkdir(exist_ok=True)
-document = fitz.open(source)
+document = pymupdf.open(source)
 if not document.page_count:
     raise ValueError("Certificate PDF does not contain a page")
 
