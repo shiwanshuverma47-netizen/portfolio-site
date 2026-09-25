@@ -8,7 +8,7 @@ This is a responsive personal portfolio for Shiwanshu Verma. It presents my skil
 
 - Responsive portfolio layout for desktop and mobile screens
 - Animated visual effects and interactive theme controls
-- About, learning highlights, skills, projects, curriculum, and journey sections
+- About, learning highlights, skills, projects, curriculum, certifications, and journey sections
 - Project Lab with search, category filters, expandable learning notes, and live result status
 - Contact links for email, LinkedIn, and GitHub
 - Floating AI assistant entry point
@@ -32,9 +32,10 @@ The portfolio is designed to be explored on both large and small screens. Add cu
 4. Projects
 5. Skills & Technologies
 6. Curriculum
-7. Journey
-8. Project Lab
-9. Get In Touch
+7. Certifications
+8. Journey
+9. Project Lab
+10. Get In Touch
 
 ## Run Locally
 
@@ -47,6 +48,16 @@ python -m http.server 8000
 ```
 
 Then visit `http://localhost:8000`.
+
+### Refresh the certificate preview
+
+The certificate card displays a high-resolution PNG rendered from the first page of `iitr_se_2509200_certificate.pdf`. To regenerate it after replacing the PDF, run:
+
+```powershell
+.\setup-certificate.ps1
+```
+
+The setup script installs PyMuPDF when needed and writes the preview to `assets/iitr_se_2509200_certificate.png`.
 
 ## Validate Project Lab
 

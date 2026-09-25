@@ -344,7 +344,7 @@
     .assistant-shell { right: 16px; bottom: 16px; }
     .assistant-label { display: none; }
     .chat-assistant { padding: 12px; }
-    #projects, #skills, #curriculum, #timeline, #contact { padding: 80px 24px; }
+    #projects, #skills, #curriculum, #certifications, #timeline, #contact { padding: 80px 24px; }
     .quote-card { padding: 24px; }
     .project-card { padding: 20px; }
   }
@@ -590,6 +590,31 @@
   }
   .module-topics li::before { content: '→'; color: var(--accent); font-size: 0.7rem; }
 
+  /* CERTIFICATIONS */
+  #certifications {
+    padding: 100px 60px;
+    background: linear-gradient(180deg, var(--surface) 0%, var(--bg) 100%);
+  }
+  .certification-card {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 18px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: 0 24px 70px var(--shadow);
+  }
+  .certificate-preview {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+  }
+  .certificate-button {
+    margin-top: 18px;
+  }
+
   /* TIMELINE */
   #timeline {
     padding: 100px 60px;
@@ -739,7 +764,7 @@
     .hero-visual { order: -1; }
     nav { padding: 16px 30px; }
     .nav-links { gap: 20px; }
-    #skills, #curriculum, #timeline, #contact { padding: 70px 30px; }
+    #skills, #curriculum, #certifications, #timeline, #contact { padding: 70px 30px; }
     .modules-grid { grid-template-columns: 1fr; }
     .stats-row { grid-template-columns: repeat(2, 1fr); }
     footer { flex-direction: column; gap: 10px; text-align: center; }
